@@ -1,0 +1,43 @@
+$machinered: #cf4b4b;
+$machinegreen: #9dc3c2;
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background: url('../images/dangerissue.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin-top: 0;
+}
+
+h1 {
+  color: $machinered;
+  margin-left: 25%;
+}
+
+.my-button {
+  background-color: $machinegreen;
+  color: $machinered;
+  margin-left: 35%;
+
+  &:hover {
+    background-color: $machinegreen;
+    color: $machinered;
+  }
+}
